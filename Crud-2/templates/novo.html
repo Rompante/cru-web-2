@@ -1,28 +1,29 @@
-<html>
-<head>
-    <meta charset="UTF-8">
-</head>
-<body>
+ <html>
+        <head>
+            <meta charset="UTF-8">
+                <style>
+                    body { font-family: Arial; }
+                    form { width: 300px; }
+                    input { width: 100%; padding: 8px; margin-bottom: 10px; }
+                    button { padding: 8px 12px; }
+                    a { text-decoration: none; }
+                </style>
+            </head>
+            <body>
 
-<h1>Novo Cliente</h1>
-<form method="POST" action="/guardar">
-    Nome:
-    <input name="nome">
-    <br><br>
+            <h2>Novo Cliente</h2>
+            <a href='/clientes'>← Voltar à lista</a><br><br>
 
-    Email:
+            <form method='POST' action='/guardar'>
+                Nome:
+                <input name='nome' required>
 
-    <input name="email">
-    <br><br>
+                Email:
+                <input name='email' type='email' required>
 
-    Telefone:
-
-    <input name="telefone">
-    <br><br>
-
-    <button type="submit">
-        Guardar
-    </button>
-</form>
-</body>
-</html>
+                Telefone:
+                <input name='telefone'>
+                <button type='submit'>Guardar</button>
+            </form>
+        </body>
+    </html>
